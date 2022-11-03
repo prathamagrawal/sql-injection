@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>XSS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../Resources/hmbct.png" />
+  <title>XSS</title>
   <link rel="stylesheet" href="../Resources/button.css">
 </head>
 
-<body style="background: #2F3FB0; color: white;">
-
-  <div style="background-color:#2F3FB0;border-radius:0px 0px 80px 80px">
-    <p align="center" style="font-family:'Georgia';font-size:200%">XSS</p>
-  </div>
-  <div class="button"
-    style="background-color:#ffffff;color: #037BFE;border-radius: 30px;padding:150px;box-shadow: 0 0 1px 1px gray;">
-    <button class="button" type="button" name="homeB" onclick="location.href='../homepage.html';"
-      style="margin-top: 30px;margin-bottom: 30px;">Home</button>
-    <button class="button" type="button" name="xss1_button" onclick="location.href='XSS_level1.php';"
-      style="margin-top: 30px;margin-bottom: 30px;">XSS Level
-      1</button>
-    <button class="button" type="button" name="xss2_button" onclick="location.href='XSS_level2.php';"
-      style="margin-top: 30px;margin-bottom: 30px;">XSS Level
-      2</button>
-    <button class="button" type="button" name="xss3_button" onclick="location.href='XSS_level3.php';"
-      style="margin-top: 30px;margin-bottom: 30px;">XSS Level
-      3</button>
-    <button class="button" type="button" name="xss4_button" onclick="location.href='XSS_level4.php';"
-      style="margin-top: 30px;margin-bottom: 30px;">XSS Level
-      4</button>
-    <button class="button" type="button" name="xss5_button" onclick="location.href='XSS_level5.php';"
-      style="margin-top: 30px;margin-bottom: 30px;">XSS Level
-      5</button>
-  </div>
-
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>XSS</h1>
+    </div>
+    <div class="content">
+      <div class="button">
+        <button class="button" type="button" name="homeB" onclick="location.href='../homepage.html';">Home</button>
+        <button class="button" type="button" name="xss1_button" onclick="location.href='xss1.php';">XSS Level
+          1</button>
+        <button class="button" type="button" name="xss2_button" onclick="location.href='xss2.php';">XSS Level
+          2</button>
+        <button class="button" type="button" name="xss3_button" onclick="location.href='xss3.php';">XSS Level
+          3</button>
+        <button class="button" type="button" name="xss4_button" onclick="location.href='xss4.php';">XSS Level
+          4</button>
+        <button class="button" type="button" name="xss5_button" onclick="location.href='xss5.php';">XSS Level
+          5</button>
+        <button class="button" type="button" name="xss6_button" onclick="location.href='xss6.php';">XSS Level
+          6</button>
+        <button class="button" type="button" name="xss7_button" onclick="location.href='xss7.php';">XSS Level
+          7</button>
+      </div>
+    </div>
 </body>
 
 </html>

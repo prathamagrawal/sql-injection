@@ -1,60 +1,71 @@
-.button button {
-  color: #ffffff;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 30%;
-  display: block;
-  border-radius: 10px;
+body {
+  background-color: #272727;
+  color: #50d890;
   text-align: center;
-  margin: 0 auto;
-  background: #037BFE;
-  border: 1px solid #037BFE;
+}
+
+h1 {
+  color: #50d890;
+  font-size: 50px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  margin: 50px 0;
+}
+
+.button button {
+  color: #272727;
+  padding: 15px;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 23px;
+  text-align: center;
+  margin: 50px 75px;
+  background: #50d890;
+  border: 1px solid #50d890;
 }
 
 .button button:hover {
-  background-color: white;
-  color: #037BFE;
-  border: 1px solid #037BFE;
+  background-color: #272727;
+  color: #50d890;
+  border: 1px solid #50d890;
 }
 
 button {
-  color: #ffffff;
-  padding: 10px 20px;
+  color: #272727;
+  padding: 15px;
   cursor: pointer;
-  width: 30%;
-  display: block;
-  border-radius: 10px;
+  width: 20%;
+  border-radius: 23px;
   text-align: center;
-  margin: 0 auto;
-  background: #037BFE;
-  border: 1px solid #037BFE;
+  margin: 150px 75px;
+  background: #50d890;
+  border: 1px solid #50d890;
 }
 
 button:hover {
-  background-color: white;
-  color: #037BFE;
-  border: 1px solid #037BFE;
+  background-color: #272727;
+  color: #50d890;
+  border: 1px solid #50d890;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
-  color: #ffffff;
-  /* padding: 10px 20px; */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  color: #272727;
+  padding: 15px;
   cursor: pointer;
-  width: 30%;
-  display: block;
-  border-radius: 10px;
+  width: 20%;
+  border-radius: 23px;
   text-align: center;
-  margin: 0 auto;
-  background: #037BFE;
-  border: 1px solid #037BFE;
+  margin: 150px 75px;
+  background: #50d890;
+  border: 1px solid #50d890;
 }
 
-input[type=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover {
-  background-color: white;
-  color: #037BFE;
-  border: 1px solid #037BFE;
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #272727;
+  color: #50d890;
+  border: 1px solid #50d890;
 }
