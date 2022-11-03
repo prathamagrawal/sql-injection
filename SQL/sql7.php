@@ -7,12 +7,12 @@
 	<link rel="stylesheet" href="../Resources/button.css">
 </head>
 
-<body style="background: #2F3FB0; color: white;">
+<body>
 
-	<div style="background-color:#ffffff;color: #037BFE;border-radius: 30px;box-shadow: 0 0 1px 1px gray;padding: 10px;">
+	<!-- <div style="background-color:#ffffff;color: #037BFE;border-radius: 30px;box-shadow: 0 0 1px 1px gray;padding: 10px;">
 		<button type="button" name="homeButton" onclick="location.href='../homepage.html';" class="button" style="margin-top: 30px;margin-bottom: 30px;">Home Page</button>
 		<button type="button" name="mainButton" onclick="location.href='sqlmainpage.html';" class="button" style="margin-top: 30px;margin-bottom: 30px;">Main Page</button>
-	</div>
+	</div> -->
 
 	<div align="center">
     <form role="form" action="sql7.php" method="get">
