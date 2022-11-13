@@ -31,10 +31,10 @@
     $conn = mysqli_connect($servername, $username, $password, $db);
     if (isset($_POST["submit"])) {
         $firstname = $_POST["firstname"];
-        if (strchr($firstname, "'")) {
-            echo "0 results";
-            exit;
-        } else {
+        // if (strchr($firstname, "'")) {
+        //     echo "0 results";
+        //     exit;
+        // } else {
             $sql = "SELECT firstname,lastname,number,username,password FROM users WHERE firstname='$firstname'"; //String
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {
@@ -54,7 +54,7 @@
             } else {
                 echo "0 results";
             }
-        }
+        //}
     }
     ?>
 </body>

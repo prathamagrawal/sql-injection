@@ -18,7 +18,7 @@
 		<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 			<h1> Prepare Statement Demonstration: </h1>
 			<h3>Enter your first name to get details: </h3>
-			First name :   <input type="text" name="firstname" value="Pratham">
+			First name :   <input type="text" name="firstname" >
 			 <button type="submit" name="submit" value="Submit" class="button"  style="margin-top: 30px;margin-bottom: 30px">Submit</button>
 		</form>
 	</div>
@@ -39,14 +39,14 @@
 		$firstname = $_POST["firstname"];
 
         //Solution
-		// $stmt = $conn->prepare("SELECT firstname,lastname,number FROM users WHERE firstname=?");
-        // $stmt->bind_param("s", $firstname);
-        // $stmt->execute();
-        // $result = $stmt->get_result();
+		$stmt = $conn->prepare("SELECT firstname,lastname,number FROM users WHERE firstname=?");
+        $stmt->bind_param("s", $firstname);
+        $stmt->execute();
+        $result = $stmt->get_result();
         
 		//Attack	
-       $sql = "SELECT firstname,lastname,number,username,password FROM users WHERE firstname='$firstname'"; //String
-		$result = mysqli_query($conn, $sql);
+    //    $sql = "SELECT firstname,lastname,number,username,password FROM users WHERE firstname='$firstname'"; //String
+	// 	$result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
