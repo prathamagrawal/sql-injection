@@ -16,9 +16,10 @@
 
 	<div align="center">
 		<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
-			<p>John -> Doe</p>
-			First name : <input type="text" name="firstname">
-			<button type="submit" name="submit" value="Submit" class="button" style="margin-top: 30px;margin-bottom: 30px;">Submit</button>
+			<h1> Prepare Statement Demonstration: </h1>
+			<h3>Enter your first name to get details: </h3>
+			First name :   <input type="text" name="firstname" value="Pratham">
+			 <button type="submit" name="submit" value="Submit" class="button"  style="margin-top: 30px;margin-bottom: 30px">Submit</button>
 		</form>
 	</div>
 
@@ -44,7 +45,7 @@
         // $result = $stmt->get_result();
         
 		//Attack	
-       $sql = "SELECT firstname,lastname,number FROM users WHERE firstname='$firstname'"; //String
+       $sql = "SELECT firstname,lastname,number,username,password FROM users WHERE firstname='$firstname'"; //String
 		$result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
@@ -55,6 +56,10 @@
 				echo $row["lastname"];
 				echo " "; 
 				echo $row["number"];
+				echo " ";
+				echo $row['username'];                    
+				echo " ";
+				echo $row['password'];  
                 echo "<br>";
             }
         } else {
