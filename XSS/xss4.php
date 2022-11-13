@@ -20,7 +20,9 @@
          <button type="submit" name="submit" value="Submit" class="button" style="margin-top: 30px;margin-bottom: 30px;">Submit</button>
       </form>
    </div>
+
    <!-- <audio src/onerror=alert(1)> -->
+   
    <?php
    if (isset($_GET["username"])) {
       $values = array("script", "prompt", "alert", "h1");
@@ -28,7 +30,6 @@
       $user = preg_replace("/<(.*)[S,s](.*)[C,c](.*)[R,r](.*)[I,i](.*)[P,p](.*)[T,t]>/i", "", $_GET["username"]);
       echo "$user";
    }
-
    ?>
 
 </body>

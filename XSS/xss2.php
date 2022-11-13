@@ -20,14 +20,15 @@
          <button type="submit" name="submit" value="Submit" class="button" style="margin-top: 30px;margin-bottom: 30px;">Submit</button>
       </form>
    </div>
+
    <!-- <audio src/onerror=alert(1)> -->
+   
    <?php
    if (isset($_GET["username"])) {
       $user = str_replace("<script>", "", $_GET["username"]);
       echo "Your name is " . "$user";
    }
    ?>
-
 
 </body>
 
