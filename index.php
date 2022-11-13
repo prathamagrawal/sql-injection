@@ -8,25 +8,24 @@
 </head>
 
 
-<body style="background: #2F3FB0; color: white;">
+<body>
 
-   <div class="button" align="center" style="background-color:#2F3FB0;padding:10px;border-radius:80px 80px 0px 0px">
-      <button type="b
-      utton" name="homepagebutton" onclick="location.href='homepage.html'" class="button">Home Page</button>
+   <div class="button" align="center">
+      <button type="button" name="homepagebutton" onclick="location.href='homepage.html'" class="button">Home Page</button>
    </div>
 
-   <div align="center" style="background-color:#ffffff;color: #037BFE;border-radius: 30px;padding:150px;box-shadow: 0 0 1px 1px gray;">
+   <div align="center">
 
       <form method="POST">
-         <label style="font-size:24px;font-family:'Georgia'">Create Database:&ensp;</label>
-         <input type="submit" name="submit" value="Create" style="padding:8px;font-family:'Georgia'"></form>
+         <label style="font-size: 20px">Create Database:&ensp;</label>
+         <input type="submit" name="submit" value="Create" style="margin: 50px"></form>
 
-      <form method="POST" style="margin-top: 30px;">
-         <label style="font-size:24px;font-family:'Georgia';">Restore Database:</label>
-         <input type="submit" name="submit1" value="Enter" style="padding:8px;font-family:'Georgia'"></form>
+      <form method="POST">
+         <label style="font-size: 20px">Restore Database:</label>
+         <input type="submit" name="submit1" value="Enter" style="margin: 50px"></form>
    </div>
 
-   <div align="center" style="background-color:#2F3FB0;padding:60px;border-radius:0px 0px 80px 80px">
+   <div align="center">
       <?php
 
       if (isset($_POST["submit"])) {
