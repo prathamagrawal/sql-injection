@@ -117,6 +117,7 @@
          $sql = 'CREATE TABLE users( ' .
             'firstname VARCHAR(50) NOT NULL , ' .
             'lastname VARCHAR(50) NOT NULL, ' .
+            'number VARCHAR(50) NOT NULL,' .
             'username  VARCHAR(50) NOT NULL, ' .
             'password   VARCHAR(50) NOT NULL )';
          mysqli_select_db($conn, $db_name);
@@ -197,25 +198,25 @@
 
          #--------------------------------------------------------------------------------------------------
 
-         $sql = 'INSERT INTO users (firstname, lastname, username, password) VALUES ("John","Doe", "Admin", "password")';
+         $sql = 'INSERT INTO users (firstname, lastname, number,username, password) VALUES ("Pratham","Agrawal","101","Admin", "password")';
          if (mysqli_query($conn, $sql)) {
             echo "New record created successfully </br>";
          } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
          }
-         $sql = 'INSERT INTO users (firstname, lastname, username, password) VALUES ("Alice","Carrol", "Rabbit", "White")';
+         $sql = 'INSERT INTO users (firstname, lastname,number, username, password) VALUES ("Rohan","Gupta","102", "Rabbit", "White")';
          if (mysqli_query($conn, $sql)) {
             echo "New record created successfully </br>";
          } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
          }
-         $sql = 'INSERT INTO users (firstname, lastname, username, password) VALUES ("Bruce","Batman", "Alfred", "Batmobile")';
+         $sql = 'INSERT INTO users (firstname, lastname,number, username, password) VALUES ("Mukesh","Yerra","103", "Alfred", "Batmobile")';
          if (mysqli_query($conn, $sql)) {
             echo "New record created successfully </br>";
          } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
          }
-         $sql = 'INSERT INTO users (firstname, lastname, username, password) VALUES ("Dare","Devil", "HackMe", "IfY0UC4N")';
+         $sql = 'INSERT INTO users (firstname, lastname,number, username, password) VALUES ("Arjun","Dheer","104", "HackMe", "IfY0UC4N")';
          if (mysqli_query($conn, $sql)) {
             echo "New record created successfully </br>";
          } else {
