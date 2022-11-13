@@ -38,19 +38,23 @@
 		$firstname = $_POST["firstname"];
 
         //Solution
-		$stmt = $conn->prepare("SELECT lastname FROM users WHERE firstname=?");
-        $stmt->bind_param("s", $firstname);
-        $stmt->execute();
-        $result = $stmt->get_result();
+		// $stmt = $conn->prepare("SELECT firstname,lastname,number FROM users WHERE firstname=?");
+        // $stmt->bind_param("s", $firstname);
+        // $stmt->execute();
+        // $result = $stmt->get_result();
         
-		//Attack
-       // $sql = "SELECT lastname FROM users WHERE firstname='$firstname'"; //String
-		//$result = mysqli_query($conn, $sql);
+		//Attack	
+       $sql = "SELECT firstname,lastname,number FROM users WHERE firstname='$firstname'"; //String
+		$result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
             while ($row = mysqli_fetch_assoc($result)) {
-                echo $row["lastname"];
+                echo $row["firstname"];
+				echo " ";
+				echo $row["lastname"];
+				echo " "; 
+				echo $row["number"];
                 echo "<br>";
             }
         } else {
